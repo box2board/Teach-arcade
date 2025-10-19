@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Teach Arcade – Free Teaching Resources</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Nunito:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {--blue:#2C6DD5;--orange:#F29C38;--slate:#1E293B;--bg:#F3F4F6;--white:#fff;}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Nunito,system-ui;background:var(--white);color:var(--slate);}
+    header{padding:20px;display:flex;align-items:center;gap:10px;border-bottom:1px solid #eee;}
+    .logo{background:linear-gradient(135deg,var(--blue),#3f83f8);color:#fff;border-radius:8px;width:40px;height:40px;display:flex;align-items:center;justify-content:center;font-weight:700;}
+    .brand{font-family:Poppins;font-size:22px;font-weight:700;}
+    nav a{margin-left:16px;color:var(--slate);text-decoration:none;}
+    .hero{text-align:center;padding:60px 20px;}
+    .hero h1{font-family:Poppins;font-size:36px;margin-bottom:10px;}
+    .cta{display:inline-block;background:var(--orange);color:white;text-decoration:none;padding:12px 20px;border-radius:8px;font-weight:700;}
+    .grid{max-width:900px;margin:40px auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;padding:0 20px;}
+    .card{background:var(--bg);padding:20px;border-radius:12px;}
+    footer{margin-top:40px;padding:20px;border-top:1px solid #eee;text-align:center;font-size:14px;color:#555;}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">TA</div>
+    <div class="brand">Teach Arcade</div>
+    <nav>
+      <a href="/subjects/index.html">Subjects</a>
+      <a href="/submit.html">Submit</a>
+      <a href="/about.html">About</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Where Teachers Come to Play</h1>
+    <p>Free, organized teaching resources across every subject and grade level.</p>
+    <a class="cta" href="/subjects/index.html">Explore Resources</a>
+  </section>
+
+  <section class="grid">
+    <div class="card"><h3>Social Studies</h3><p>U.S. History, World History, Geography, Civics, and more.</p></div>
+    <div class="card"><h3>Math</h3><p>Algebra, Geometry, Statistics, and more.</p></div>
+    <div class="card"><h3>Science</h3><p>Biology, Chemistry, Physics, Earth Science.</p></div>
+    <div class="card"><h3>English / Language Arts</h3><p>Reading, Writing, Grammar, Literature Guides.</p></div>
+  </section>
+
+  <footer>© <span id="y"></span> Teach Arcade</footer>
+  <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+</body>
+</html>
